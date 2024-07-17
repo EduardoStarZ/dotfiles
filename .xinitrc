@@ -38,6 +38,6 @@ fi
 xwallpaper --zoom wallpaper.jpg
 # wal -i wallpaper.jpg
 wal -R
-# setsid xcompmgr -C -f -D 5 &
+setsid xcompmgr -C -f -D 5 &
 setsid dwmblocks &
 exec dwm
