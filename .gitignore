@@ -1,0 +1,17 @@
+*
+
+!.gitignore
+!.tmux.conf
+!.bash_history
+!.bash_logout
+!.bashrc
+!colors.json
+!.gitconfig
+!.nvimrc
+!.profile
+!.xinitrc
+!.xprofile
+!.zprofile
+!.zsh_logout
+!.zshrc
+!/.local/bin/*
