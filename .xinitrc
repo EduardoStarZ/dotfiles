@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH:/go/bin/:$PATH
 
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
@@ -35,9 +35,11 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
  unset f
 fi
 
+dbus-update-activation-environment --all
+gnome-keyring-daemon --start --components=secrets
 xwallpaper --zoom wallpaper.jpg
 # wal -i wallpaper.jpg
 wal -R
-setsid xcompmgr -C -f -D 5 &
-setsid dwmblocks &
-exec dwm
+#setsid xcompmgr -C -f -D 5 &
+#setsid dwmblocks &
+exec i3
