@@ -80,6 +80,8 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin/:$PATH"
 
+setxkbmap -model abnt-2 -layout br
+
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
