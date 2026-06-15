@@ -108,3 +108,5 @@ export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin/:$PATH"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias nvim="NVIM_NOTTYFAST=1 nvim"
+
+alias catless="cat $1 | less"
