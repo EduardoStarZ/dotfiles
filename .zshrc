@@ -70,7 +70,7 @@ ZSH_THEME="xiong-chiamiov-plus"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git archlinux colored-man-pages rsync rust aliases)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,3 +106,5 @@ export PATH="$HOME/.local/bin:$HOME/.cargo/bin:$HOME/go/bin/:$PATH"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias nvim="NVIM_NOTTYFAST=1 nvim"
